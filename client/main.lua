@@ -61,7 +61,7 @@ local function whitelistedVehicle()
     local retval = false
 
     for i = 1, #Config.AllowedVehicles, 1 do
-        if veh == Config.AllowedVehicles[i].model then
+        if veh == joaat(Config.AllowedVehicles[i].model) then
             retval = true
         end
     end
@@ -71,7 +71,7 @@ local function whitelistedVehicle()
     end
 
     return retval
-end
+end 
 
 local function nextStop()
     if route <= (max - 1) then
