@@ -71,7 +71,7 @@ local function whitelistedVehicle()
     end
 
     return retval
-end 
+end
 
 local function nextStop()
     if route <= (max - 1) then
